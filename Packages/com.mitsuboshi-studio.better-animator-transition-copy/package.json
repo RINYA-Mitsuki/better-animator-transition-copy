@@ -1,0 +1,17 @@
+{
+  "name": "com.mitsuboshi-studio.better-animator-transition-copy",
+  "displayName": "Better Animator Transition Copy",
+  "version": "1.0.0",
+  "description": "Animator Transitionの条件をまとめてコピー・貼り付けします。",
+  "unity": "2022.3",
+  "author": {
+    "name": "Mitsuboshi_Studio",
+    "url": "https://github.com/RINYA-Mitsuki"
+  },
+  "url": "https://github.com/RINYA-Mitsuki/better-animator-transition-copy/releases/download/v1.0.0/com.mitsuboshi-studio.better-animator-transition-copy-1.0.0.zip",
+  "changelogUrl": "https://github.com/RINYA-Mitsuki/better-animator-transition-copy/releases",
+  "vpmDependencies": {
+    "com.vrchat.base": ">=3.10.4 <4.0.0"
+  },
+  "license": "MIT"
+}

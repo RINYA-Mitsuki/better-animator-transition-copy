@@ -31,11 +31,6 @@ Unity 2022.3.22f1の参照ライブラリによるC#コンパイルとパッケ�
 動作・品質・特定環境への適合性は保証しません。サポート、不具合修正、機能追加、問い合わせへの回答はお約束しません。**利用したことによる苦情は一切受け付けません。**
 
 MITライセンスです。無保証・責任制限は [LICENSE.md](LICENSE.md) を参照してください。
-
-
-## 開発・リリース
-
-[共通仕様](https://github.com/RINYA-Mitsuki/vpm-repository/blob/main/docs/STANDARD.md)に従います。manifestのversionとurl、CHANGELOGを更新し、mainへの反映後にActionsのRelease VPM packageを実行してください。対応するvタグのpushにも対応します。公開済みアセットは上書きしません。共通Listingは毎時17分（UTC）に更新します。
 ## AIによる制作について
 
 ツール本体、VPMパッケージ化、配布用リポジトリおよび自動化環境は、すべてAIを利用して制作しています。内容を確認したうえで、ご自身の判断と責任で使用してください。
