@@ -1,5 +1,5 @@
 """Publish a verified draft release; retries never overwrite existing asset bytes."""
-import json, os, subprocess, tempfile
+import json, os, subprocess, tempfile, time
 from pathlib import Path
 from package import build
 
@@ -31,7 +31,11 @@ def main():
     if release is None:
         gh('release','create',tag,'--repo',repo,'--target',head,'--draft','--title',f"{m['displayName']} {m['version']}",
            '--notes-file',str(root/'CHANGELOG.md'))
-        release=find_release(repo,tag)
+        for _ in range(10):
+            release=find_release(repo,tag)
+            if release is not None:
+                break
+            time.sleep(1)
         if release is None: raise ValueError('Created draft release was not returned by API')
     if release['draft'] and not exact:
         gh('release','edit',tag,'--repo',repo,'--target',head)
